@@ -5,6 +5,7 @@ USER_HOME=$(cat /etc/passwd | grep ^U | cut -d: -f6)
 USER=$(cat /etc/passwd | grep ^U | cut -d: -f1)
 cp ./cli-helper-1854.adoc $USER_HOME/cli-helper-1854.adoc
 cp ./cli-helper-1854.html $USER_HOME/cli-helper-1854.html
+cp ./cli-helper-1854.html $USER_HOME/HELPER.html
 mkdir /root/scripts.d
 cp ./deploy_cluster.sh /root/scripts.d
 cp ./break_and_fix1.yaml /root/scripts.d
